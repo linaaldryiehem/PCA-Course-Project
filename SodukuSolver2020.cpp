@@ -7,7 +7,6 @@ using namespace std;
 #define N 20
 int zero_counter=0;
 int nonzero_counter = 0;
-int num=0;
 
 void print(int arr[N][N])
 {
@@ -112,7 +111,6 @@ auto start = std::chrono::high_resolution_clock::now();
             }
         }
     }
-    cout << "Number of threads: " <<  num << endl;
     cout << "Number of zeroes in grid: (Parallel:) " << zero_counter << endl;
     cout << "Number of non-zeros in grid: (Parallel:) " << nonzero_counter << endl;
 
